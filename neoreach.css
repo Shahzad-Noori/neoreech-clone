@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: proxima-nova, sans-serif;
+    /* border: 1px solid red; */
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#navbar {
+    width: 50%;
+    font-size: 16px;
+    font-family: proxima-nova, sans-serif;
+    color: #474747;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#navbar li {
+    cursor: pointer;
+    padding: 3% 0;
+}
+
+#login {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-family: proxima-nova, sans-serif;
+    color: #474747;
+}
+
+#login li:hover {
+    cursor: pointer;
+    transition: all 1s;
+    color: #00C8AF;
+}
+
+#login button {
+    background-color: #00C8AF;
+    color: white;
+    padding: 5% 10%;
+    font-size: 18px;
+    font-family: proxima-nova, sans-serif;
+    border-radius: 15px;
+    border: none;
+}
+
+#login button:hover {
+    background-color: black;
+    color: #00C8AF;
+}
+
+.solution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#drop1 {
+    width: 800px;
+    height: 60vh;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.solution:hover #drop1 {
+    display: flex;
+
+
+}
+
+.down1 {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.indown1 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.indown1 span {
+    color: #353232;
+    font-size: 18px;
+    font-family: proxima-nova, sans-serif;
+}
+
+.indown1 span:hover {
+    color: #00C8AF;
+    transition: all .5s;
+}
+
+.indown1 i {
+    font-size: 40px;
+    color: #76e7cd;
+}
+
+.indown1 h4 {
+    font-size: 13px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+#line {
+    width: 1px;
+    height: 80%;
+    background-color: #474747;
+}
+
+
+
+#main1 {
+    width: 100%;
+    height: 100vh;
+    padding: 10% 0 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content1 {
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#content1 h1 {
+    font-size: 40px;
+    font-family: proxima-nova, sans-serif;
+}
+
+#content1 p {
+    font-size: 20px;
+    line-height: 36px;
+
+}
+
+#content1 button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #00C8AF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#content1 button:hover {
+    background-color: black;
+    color: #00C8AF;
+}
+
+#animate1 {
+    width: 800px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+#sliderbox {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 40%;
+    left: 200px;
+    overflow: hidden;
+}
+
+#slider1 {
+    width: 2000px;
+    height: 150px;
+    border: 1px solid green;
+    position: absolute;
+    left: -210%;
+    display: flex;
+    justify-content: space-between;
+    animation-name: slider1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider1 {
+    0%{
+        left: 0%;
+    }
+    100% {
+        left: -210%;
+    }
+}
+
+.img3 {
+    width: 250px;
+    /* height: 250px; */
+    position: absolute;
+    left: 0%;
+}
+
+.img4 {
+    width: 400px;
+    /* height: 400px; */
+    position: absolute;
+    left: 50px;
+}
+.img5{
+    width: 200px;
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    animation-name: img5;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes img5{
+   
+    50%{
+        top: 67%;
+    }
+    100%{
+        top: 70%;
+    }
+}
+.img6{
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    left: 300px;
+    animation-name: img6;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes img6{
+   
+    50%{
+        top: 17%;
+    }
+    100%{
+        top: 15%;
+    }
+}
+.img7{
+    width: 60px;
+    position: absolute;
+    left: 300px;
+    top: 67%;
+}
+.img8{
+    width: 20px;
+    position: absolute;
+    left: 360px;
+    top: 67%;
+    transform: rotate(-25deg);
+
+}
+
+.img11{
+    width: 400px;
+    position: absolute;
+    left: 500px;
+}
